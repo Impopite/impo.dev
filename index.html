@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Impoo — Developer. Web Developer e Java Developer." />
+  <meta name="author" content="Impoo" />
+
+  <meta property="og:title" content="Impoo — Developer" />
+  <meta property="og:description" content="Portfolio di Impoo, Developer specializzato in Java e Web Development." />
+  <meta property="og:type" content="website" />
+
+  <title>Impoo — Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!--
+       NAVBAR
+  -->
+  <nav class="navbar" role="navigation" aria-label="Menu principale">
+    <div class="nav-logo" title="Torna in cima">
+      <span class="bracket">&lt;</span>Impoo<span class="bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" role="list">
+      <li><a data-section="about" data-index="01." href="#about">About</a></li>
+      <li><a data-section="technologies" data-index="02." href="#technologies">Technologies</a></li>
+      <li><a data-section="projects" data-index="03." href="#projects">Projects</a></li>
+      <li><a data-section="experience" data-index="04." href="#experience">Experiences</a></li>
+      <li><a data-section="contact" data-index="05." href="#contact" class="nav-cta">Contacts</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Apri menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!--
+       HERO
+  -->
+  <section class="hero" aria-label="Presentazione">
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Working on @AtlantisRP - @CoralMC
+      </div>
+
+      <h1 class="hero-name">
+        <span class="solid">I</span><span class="outline">mpoo</span>
+      </h1>
+
+      <p class="hero-role">
+        <span class="prompt">$_</span>
+        <span class="hero-typing"></span>
+        <span class="cursor" aria-hidden="true"></span>
+      </p>
+
+      <p class="hero-desc">
+        I am a Developer with a solid foundation in Java and Web Development.
+        I enjoy creating high-performance, scalable, and detail-oriented software.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">Projects</a>
+        <a href="#contact"  class="btn-outline">Contacts</a>
+      </div>
+
+      <div class="hero-tech" aria-label="Tecnologie principali">
+        <span>Java</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>Lua</span>
+        <span>MySQL</span>
+        <span>C++</span>
+        <span>C</span>
+      </div>
+    </div>
+
+    
+  </section>
+
+  <!--
+       ABOUT
+  -->
+  <section id="about" aria-labelledby="about-title">
+    <div class="section-inner">
+      <p class="section-label">// 01. Chi sono</p>
+      <h2 class="section-title reveal" id="about-title">About <span class="accent">me</span></h2>
+
+      <div class="about-grid">
+        <div class="about-avatar reveal" aria-label="Foto profilo di Impoo">
+          <img src="img/avatar.jpg" alt="Impoo — Developer" />
+        </div>
+
+        <div class="about-text">
+          <p class="reveal reveal-delay-1">
+            I am a <strong style="color:var(--neon); font-weight:600;">Developer</strong>
+            with a strong foundation in Java and Web Development. I enjoy building software that is
+            not only functional, but also high-performance, scalable, and easy to maintain over time.
+          </p>
+          <p class="reveal reveal-delay-2">
+            Over the years, I have worked with many different languages and paradigms, from
+            object-oriented programming in Java, to developing modern interfaces
+            with JavaScript, and scripting with Python and Lua.
+          </p>
+          <p class="reveal reveal-delay-3">
+            I am always curious, always up to date, and I find satisfaction in solving
+            complex problems with simple and elegant solutions.
+          </p>
+
+          <div class="about-stats reveal reveal-delay-4">
+            <div class="stat-item">
+              <span class="stat-num" data-target="3" data-suffix="+">3+</span>
+              <span class="stat-label">Exp. years</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="10" data-suffix="+">10+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="10" data-suffix="+">7+</span>
+              <span class="stat-label">Languages</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <!--
+       TECHNOLOGIES
+  -->
+  <section id="technologies" aria-labelledby="tech-title">
+    <div class="section-inner">
+      <p class="section-label">// 02. Tecnologie</p>
+      <h2 class="section-title reveal" id="tech-title">Current <span class="accent">Technologies</span></h2>
+      <p class="tech-intro reveal">
+        A overview of the technologies I currently work with and their role in my projects.
+      </p>
+
+      <div class="tech-grid">
+
+        <!-- Linguaggi -->
+        <div class="tech-card glow-card reveal reveal-delay-1">
+          <div class="tech-icon">☕</div>
+          <div class="tech-info">
+            <div class="tech-name">Java</div>
+            <div class="tech-desc">Coding Language</div>
+          </div>
+        </div>
+
+        <div class="tech-card glow-card reveal reveal-delay-1">
+          <div class="tech-icon" style="font-size:17px;font-weight:700;color:#f7df1e;">JS</div>
+          <div class="tech-info">
+            <div class="tech-name">JavaScript</div>
+            <div class="tech-desc">Coding Language</div>
+          </div>
+        </div>
+
+        <div class="tech-card glow-card reveal reveal-delay-2">
+          <div class="tech-icon">🐍</div>
+          <div class="tech-info">
+            <div class="tech-name">Python</div>
+            <div class="tech-desc">Coding Language</div>
+          </div>
+        </div>
+
+        <div class="tech-card glow-card reveal reveal-delay-2">
+          <div class="tech-icon" style="font-size:15px;font-weight:700;color:#777bb4;">PHP</div>
+          <div class="tech-info">
+            <div class="tech-name">PHP</div>
+            <div class="tech-desc">Backend Language</div>
+          </div>
+        </div>
+
+        <div class="tech-card glow-card reveal reveal-delay-3">
+          <div class="tech-icon" style="font-size:15px;font-weight:700;color:#00758f;">C++</div>
+          <div class="tech-info">
+            <div class="tech-name">C++</div>
+            <div class="tech-desc">System Language</div>
+          </div>
+        </div>
+
+        <div class="tech-card glow-card reveal reveal-delay-4">
+          <div class="tech-icon" style="font-size:15px;font-weight:700;color:#00007c;">Lua</div>
+          <div class="tech-info">
+            <div class="tech-name">Lua</div>
+            <div class="tech-desc">Scripting Language</div>
+          </div>
+        </div>
+
+        <div class="tech-card glow-card reveal reveal-delay-4">
+          <div class="tech-icon">🌐</div>
+          <div class="tech-info">
+            <div class="tech-name">HTML5</div>
+            <div class="tech-desc">Markup Language</div>
+          </div>
+        </div>
+
+        <div class="tech-card glow-card reveal reveal-delay-1">
+          <div class="tech-icon" style="font-size:16px;font-weight:700;color:#264de4;">CSS</div>
+          <div class="tech-info">
+            <div class="tech-name">CSS3</div>
+            <div class="tech-desc">Styling Language</div>
+          </div>
+        </div>
+
+        <div class="tech-card glow-card reveal reveal-delay-2">
+          <div class="tech-icon">🗄️</div>
+          <div class="tech-info">
+            <div class="tech-name">MySQL</div>
+            <div class="tech-desc">SQL Database</div>
+          </div>
+        </div>
+
+        <div class="tech-card glow-card reveal reveal-delay-3">
+          <div class="tech-icon">🔀</div>
+          <div class="tech-info">
+            <div class="tech-name">Git</div>
+            <div class="tech-desc">Version Control</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <!--
+       PROGETTI
+  -->
+  <section id="projects" aria-labelledby="projects-title">
+    <div class="section-inner">
+      <p class="section-label">// 03. lavori</p>
+      <h2 class="section-title reveal" id="projects-title">My <span class="accent">Projects</span></h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card glow-card reveal reveal-delay-1">
+          <div class="project-top">
+            <div class="project-icon" aria-hidden="true">⚙️</div>
+            <div class="project-links">
+              <a href="https://github.com/Impopite/PartySystem" class="project-link">GitHub</a>
+            </div>
+          </div>
+          <p class="project-type-badge">Java Plugin</p>
+          <h3 class="project-name">PartySystem</h3>
+          <p class="project-desc">
+            Paper plugin for efficient and optimized party management.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Java</span>
+            <span class="stack-tag">MySQL</span>
+            <span class="stack-tag">Gradle</span>
+          </div>
+        </article>
+
+        <article class="project-card glow-card reveal reveal-delay-1">
+          <div class="project-top">
+            <div class="project-icon" aria-hidden="true">⚙️</div>
+            <div class="project-links">
+              <a href="https://github.com/Impopite/AuthSystem" class="project-link">GitHub</a>
+            </div>
+          </div>
+          <p class="project-type-badge">Java Plugin</p>
+          <h3 class="project-name">AuthSystem - <i>Work In Progress</i></h3>
+          <p class="project-desc">
+            Secure authentication plugin for Minecraft servers that manages player login and registration with password protection, session handling, and account security features. Designed to keep your server safe and easy to use for players.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Java</span>
+            <span class="stack-tag">MySQL</span>
+            <span class="stack-tag">Gradle</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <!-- 
+       ESPERIENZA
+   -->
+  <section id="experience" aria-labelledby="experience-title">
+    <div class="section-inner">
+      <p class="section-label">// 04. carriera</p>
+      <h2 class="section-title reveal" id="experience-title">My <span class="accent">Experiences</span></h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <p class="timeline-period">2026 — Now</p>
+          <h3 class="timeline-role">Java Developer</h3>
+          <p class="timeline-company">AtlantisRP - CoralMC</p>
+          <p class="timeline-desc">
+            Plugins developed for the AtlantisRP mode within the CoralMC network.
+          </p>
+          <div class="timeline-tech">
+            <span>Java</span><span>MySQL</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <p class="timeline-period">2024</p>
+          <h3 class="timeline-role">Junior Java Developer</h3>
+          <p class="timeline-company">MerakiNetwork</p>
+          <p class="timeline-desc">
+            Plugins developed for the MerakiNetwork server.
+          </p>
+          <div class="timeline-tech">
+            <span>Java</span><span>MySQL</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <!-- 
+       CONTATTI
+   -->
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="section-inner">
+      <p class="section-label">// 05. contatti</p>
+      <h2 class="section-title reveal" id="contact-title"><span class="accent">Contacts</span></h2>
+
+      <div class="contact-wrapper">
+        <p class="contact-intro-text reveal">
+          I am always open to new opportunities, collaborations, and interesting projects.
+          Getting in touch with me is easy, just choose your preferred platform!
+        </p>
+
+        <div class="contact-links">
+
+          <a href="https://t.me/tentava" target="_blank" rel="noopener" class="contact-link reveal reveal-delay-1" aria-label="Telegram @tentava">
+            <div class="contact-link-icon"><i class="fa-brands fa-telegram"></i></div>
+            <div class="contact-link-info">
+              <div class="contact-link-platform">Telegram</div>
+              <div class="contact-link-handle">@tentava</div>
+            </div>
+            <span class="contact-link-arrow">→</span>
+          </a>
+
+          <a href="https://discord.com/users/Impopite" target="_blank" rel="noopener" class="contact-link reveal reveal-delay-2" aria-label="Discord @Impopite">
+            <div class="contact-link-icon"><i class="fa-brands fa-discord"></i></div>
+            <div class="contact-link-info">
+              <div class="contact-link-platform">Discord</div>
+              <div class="contact-link-handle">@Impopite</div>
+            </div>
+            <span class="contact-link-arrow">→</span>
+          </a>
+
+          <a href="https://github.com/Impopite" target="_blank" rel="noopener" class="contact-link reveal reveal-delay-3" aria-label="GitHub Impopite">
+            <div class="contact-link-icon"><i class="fa-brands fa-github"></i></div>
+            <div class="contact-link-info">
+              <div class="contact-link-platform">GitHub</div>
+              <div class="contact-link-handle">Impopite</div>
+            </div>
+            <span class="contact-link-arrow">→</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--
+       FOOTER
+  -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-text">
+        Impoo Projects © 2026 . All rights reserved. Designed and developed by <span class="accent">Impoo</span> &mdash; 2026
+      </p>
+      <button class="footer-back-top" aria-label="Torna in cima">↑ top</button>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/animations.js"></script>
+
+</body>
+</html>
