@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ── Scroll Reveal ── */
+  /* scroll revela */
   const revealEls = document.querySelectorAll('.reveal, .timeline-item');
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   revealEls.forEach(el => revealObserver.observe(el));
 
-  /* ── Typing Effect ── */
+  /* typing effect */
   const typingEl = document.querySelector('.hero-typing');
   if (typingEl) {
     const phrases = [
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(type, 800);
   }
 
-  /* ── Glow Card (mouse tracking) ── */
+  /* reveal */
   document.querySelectorAll('.glow-card').forEach(card => {
     card.addEventListener('mousemove', (e) => {
       const rect = card.getBoundingClientRect();
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ── Counter Animato ── */
+  /* counter animati */
   const counters = document.querySelectorAll('.stat-num[data-target]');
   if (counters.length) {
     const counterObserver = new IntersectionObserver((entries) => {

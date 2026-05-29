@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu  = document.querySelector('.nav-links');
   const sections = document.querySelectorAll('section[id]');
 
-  /* ── Scroll: aggiunge classe .scrolled alla navbar ── */
   const onScroll = () => {
     if (window.scrollY > 40) {
       navbar.classList.add('scrolled');
@@ -16,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     highlightActiveLink();
   };
 
-  /* ── Evidenzia il link della sezione visibile ── */
   const highlightActiveLink = () => {
     let current = '';
 
@@ -36,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  /* ── Click sui link: smooth scroll + chiudi menu mobile ── */
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
