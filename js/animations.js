@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const typingEl = document.querySelector('.hero-typing');
   if (typingEl) {
     const phrases = [
-      'Java Developer',
-      'Web Developer',
       'Computer Engineering Students',
+      'Java Developer',
+      'Jr. Web Developer'
     ];
     let phraseIndex = 0, charIndex = 0, isDeleting = false, typingSpeed = 80;
 
