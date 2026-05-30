@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ── Logo click: torna in cima ── */
+  /* Logo click: torna in cima */
   const logo = document.querySelector('.nav-logo');
   if (logo) {
     logo.addEventListener('click', () => {
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     logo.style.cursor = 'pointer';
   }
 
-  /* ── Mobile toggle ── */
+  /* Mobile toggle */
   if (toggle) {
     toggle.addEventListener('click', () => {
       toggle.classList.toggle('open');
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ── Back to top (footer) ── */
+  /* Back to top (footer) */
   const backTop = document.querySelector('.footer-back-top');
   if (backTop) {
     backTop.addEventListener('click', () => {
