@@ -10,14 +10,14 @@ const navItems = [
 ];
 
 const technologies = [
-  ['devicon-java-plain colored', 'Java', 'Plugin & backend'],
+  ['devicon-java-plain colored', 'Java', 'Plugin & software'],
   ['devicon-javascript-plain colored', 'JavaScript', 'Frontend logic'],
   ['devicon-react-original colored', 'React', 'Modern UI'],
-  ['devicon-python-plain colored', 'Python', 'Automation'],
+  ['devicon-python-plain colored', 'Python', 'Software'],
   ['devicon-php-plain colored', 'PHP', 'Web backend'],
-  ['devicon-cplusplus-plain colored', 'C++', 'Performance'],
+  ['devicon-cplusplus-plain colored', 'C++', 'Software'],
   ['devicon-mysql-plain colored', 'MySQL', 'Data storage'],
-  ['devicon-git-plain colored', 'Git', 'Versioning'],
+  ['devicon-git-plain colored', 'Git', 'Version control'],
 ];
 
 const projects = [
@@ -42,9 +42,9 @@ const projects = [
     status: 'Published',
   },
   {
-    name: 'InventoryLogger',
+    name: 'Protect',
     type: 'Java Plugin',
-    description: 'Inventory tracking plugin currently in development.',
+    description: 'A fast and reliable block logging and rollback plugin for Minecraft servers.',
     links: [{ label: 'GitHub', href: 'https://github.com/Impopite' }],
     stack: ['Java', 'MySQL', 'Gradle'],
     status: 'In progress',
