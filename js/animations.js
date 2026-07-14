@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* scroll revela */
+  /* scroll reveal */
   const revealEls = document.querySelectorAll('.reveal, .timeline-item');
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
