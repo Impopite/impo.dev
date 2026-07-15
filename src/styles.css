@@ -194,26 +194,54 @@ img {
   z-index: 1;
 }
 
-.hero-badge {
+.work-status {
   display: inline-flex;
   align-items: center;
-  gap: 9px;
-  margin: 0 0 28px;
-  padding: 8px 13px;
-  border: 1px solid rgba(192, 132, 252, 0.26);
-  border-radius: 999px;
-  background: rgba(192, 132, 252, 0.1);
-  color: var(--neon);
-  font-size: 12px;
-  text-transform: uppercase;
+  gap: 13px;
+  margin: 0 0 30px;
+  padding: 3px 0 3px 14px;
+  border-left: 2px solid var(--neon);
 }
 
-.hero-badge span {
+.work-status__signal {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(134, 239, 172, 0.1);
+}
+
+.work-status__signal i {
   width: 7px;
   height: 7px;
   border-radius: 50%;
   background: var(--green);
-  box-shadow: 0 0 14px var(--green);
+  box-shadow: 0 0 0 5px rgba(134, 239, 172, 0.1), 0 0 14px var(--green);
+}
+
+.work-status p {
+  margin: 0;
+}
+
+.work-status__label {
+  margin-bottom: 3px !important;
+  color: var(--subtle);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.work-status__value {
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.work-status__value span {
+  color: var(--neon);
+  font-weight: 500;
 }
 
 .hero h1 {
