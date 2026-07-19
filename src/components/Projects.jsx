@@ -4,6 +4,7 @@ const projects = [
   {
     name: 'PartySystem',
     type: 'Java Plugin',
+    icon: 'devicon-java-plain colored',
     description: 'Paper plugin for efficient and optimized party management.',
     links: [{ label: 'GitHub', href: 'https://github.com/Impopite/PartySystem' }],
     stack: ['Java', 'MySQL', 'Gradle'],
@@ -12,6 +13,7 @@ const projects = [
   {
     name: 'AuthSystem',
     type: 'Java Plugin',
+    icon: 'devicon-java-plain colored',
     description: 'Secure authentication plugin with login, registration, sessions, and account protection.',
     links: [
       { label: 'GitHub', href: 'https://github.com/Impopite/AuthSystem' },
@@ -23,6 +25,7 @@ const projects = [
   {
     name: 'Protect',
     type: 'Java Plugin',
+    icon: 'devicon-java-plain colored',
     description: 'Fast and reliable block logging and rollback plugin for Minecraft servers.',
     links: [{ label: 'GitHub', href: 'https://github.com/Impopite' }],
     stack: ['Java', 'MySQL', 'Gradle'],
@@ -31,6 +34,7 @@ const projects = [
   {
     name: 'Portfolio',
     type: 'Website',
+    icon: 'devicon-react-original colored',
     description: 'Personal portfolio built with React, Vite, and responsive CSS.',
     links: [{ label: 'GitHub', href: 'https://github.com/Impopite/impo.dev' }],
     stack: ['React', 'Vite', 'CSS'],
@@ -47,7 +51,7 @@ function Projects() {
           {projects.map((project) => (
             <article className="project-card" key={project.name}>
               <div className="project-card-header">
-                <div className="project-icon" aria-hidden="true">{"{}"}</div>
+                <div className="project-icon" aria-hidden="true"><i className={project.icon} /></div>
                 <div className="project-links">
                   {project.links.map((link) => (
                     <a href={link.href} target="_blank" rel="noopener noreferrer" key={link.href}>
