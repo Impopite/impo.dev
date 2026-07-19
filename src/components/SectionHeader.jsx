@@ -1,10 +1,10 @@
 function SectionHeader({ eyebrow, title, accent }) {
-    return (
-        <>
-            <p className="section-label">{eyebrow}</p>
-            <h2 className="section-title">{title} <span>{accent}</span></h2>
-        </>
-    );
+  return (
+    <div className="section-header">
+      <p className="section-eyebrow">// {eyebrow}</p>
+      <h2 className="section-title">{title} <span className="accent">{accent}</span></h2>
+    </div>
+  );
 }
 
 export default SectionHeader;

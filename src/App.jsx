@@ -9,7 +9,7 @@ import Hero from "./components/Hero.jsx";
 
 function App() {
   useEffect(() => {
-    const revealEls = document.querySelectorAll('section, .glow-card, .timeline-item, .profile-card');
+    const revealEls = document.querySelectorAll('section, .profile-card, .timeline-item');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -21,25 +21,14 @@ function App() {
 
     revealEls.forEach((el) => observer.observe(el));
 
-    const onPointerMove = (event) => {
-      document.querySelectorAll('.glow-card').forEach((card) => {
-        const rect = card.getBoundingClientRect();
-        card.style.setProperty('--mouse-x', `${event.clientX - rect.left}px`);
-        card.style.setProperty('--mouse-y', `${event.clientY - rect.top}px`);
-      });
-    };
-
-    window.addEventListener('pointermove', onPointerMove, { passive: true });
-    return () => {
-      observer.disconnect();
-      window.removeEventListener('pointermove', onPointerMove);
-    };
+    return () => observer.disconnect();
   }, []);
 
   return (
     <>
+      <a href="#main-content" className="skip-link">Skip to content</a>
       <Navbar />
-      <main>
+      <main id="main-content">
         <Hero />
         <About />
         <Technologies />
@@ -48,8 +37,10 @@ function App() {
         <Contact />
       </main>
       <footer>
-        <p>Impoo Projects (c) 2026. Designed and developed by <span>Impoo</span>.</p>
-        <button type="button" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>top</button>
+        <p>&copy; 2026 Impoo. Designed &amp; built with React.</p>
+        <button type="button" className="footer-top" aria-label="Back to top" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          ↑ top
+        </button>
       </footer>
     </>
   );
