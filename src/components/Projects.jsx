@@ -8,7 +8,7 @@ const projects = [
     description: 'Paper plugin for efficient and optimized party management.',
     links: [{ label: 'GitHub', href: 'https://github.com/Impopite/PartySystem' }],
     stack: ['Java', 'MySQL', 'Gradle'],
-    status: 'Optimized',
+    status: 'Published',
   },
   {
     name: 'AuthSystem',
@@ -38,7 +38,7 @@ const projects = [
     description: 'Personal portfolio built with React, Vite, and responsive CSS.',
     links: [{ label: 'GitHub', href: 'https://github.com/Impopite/impo.dev' }],
     stack: ['React', 'Vite', 'CSS'],
-    status: 'Live',
+    status: 'Published',
   },
 ];
 

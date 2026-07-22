@@ -9,10 +9,6 @@ function Hero() {
       <div className="hero-grid" aria-hidden="true" />
 
       <div className="hero-content">
-        <div className="hero-label">
-          <span className="dot" aria-hidden="true" />
-          Available for projects
-        </div>
 
         <h1>Impoo</h1>
 
