@@ -17,19 +17,22 @@ const projects = [
     description: 'Secure authentication plugin with login, registration, sessions, and account protection.',
     links: [
       { label: 'GitHub', href: 'https://github.com/Impopite/AuthSystem' },
-      { label: 'Modrinth', href: 'https://modrinth.com/plugin/authenticationsystem' },
+      { label: 'Modrinth', href: 'https://modrinth.com/plugin/authenticationsystem' }
     ],
     stack: ['Java', 'MySQL', 'Gradle'],
     status: 'Published',
   },
   {
-    name: 'Protect',
+    name: 'Guardian',
     type: 'Java Plugin',
     icon: 'devicon-java-plain colored',
     description: 'Fast and reliable block logging and rollback plugin for Minecraft servers.',
-    links: [{ label: 'GitHub', href: 'https://github.com/Impopite' }],
+    links: [
+        { label: 'GitHub', href: 'https://github.com/Impopite/Guardian' },
+        { label: 'Modrinth', href: 'https://modrinth.com/plugin/Guardianmc' }
+    ],
     stack: ['Java', 'MySQL', 'Gradle'],
-    status: 'In progress',
+    status: 'Published',
   },
   {
     name: 'Portfolio',
