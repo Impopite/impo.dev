@@ -2,7 +2,6 @@ import SectionHeader from "./SectionHeader.jsx";
 
 const contacts = [
   ['fa-brands fa-telegram', 'Telegram', '@tentava', 'https://t.me/tentava'],
-  ['fa-brands fa-discord', 'Discord', '@Impopite', 'https://discord.gg/Impopite'],
   ['fa-brands fa-github', 'GitHub', 'Impopite', 'https://github.com/Impopite'],
 ];
 
@@ -26,6 +25,15 @@ function Contact() {
           </p>
         </div>
         <div className="contact-links">
+          <div className="contact-link" key="Discord">
+            <div className="contact-icon">
+              <i className="fa-brands fa-discord" aria-hidden="true" />
+            </div>
+            <div className="contact-info">
+              <span className="contact-platform">Discord</span>
+              <span className="contact-handle">@Impopite</span>
+            </div>
+          </div>
           {contacts.map(([icon, platform, handle, href]) => (
             <a className="contact-link" href={href} target="_blank" rel="noopener noreferrer" key={platform}>
               <div className="contact-icon">
