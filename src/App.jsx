@@ -6,6 +6,7 @@ import Experience from "./components/Experience.jsx";
 import Contact from "./components/Contact.jsx";
 import About from "./components/About.jsx";
 import Hero from "./components/Hero.jsx";
+import ErrorBoundary from "./components/ErrorBoundary.jsx";
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
     <>
       <a href="#main-content" className="skip-link">Skip to content</a>
       <Navbar />
+      <ErrorBoundary>
       <main id="main-content">
         <Hero />
         <About />
@@ -36,6 +38,7 @@ function App() {
         <Experience />
         <Contact />
       </main>
+      </ErrorBoundary>
       <footer>
         <p>&copy; 2026 Impoo. Designed &amp; built with React.</p>
         <button type="button" className="footer-top" aria-label="Back to top" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>

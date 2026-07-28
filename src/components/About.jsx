@@ -21,7 +21,7 @@ function About() {
         </div>
 
         <div className="profile-card">
-          <img src={avatarUrl} alt="Impoo - Developer" />
+          <img src={avatarUrl} alt="Impoo - Developer" loading="lazy" width="280" height="280" />
           <div className="profile-card-info">
             <p className="profile-card-name">Impoo</p>
             <p className="profile-card-role">Java Developer / Jr. Web Developer</p>

@@ -2,7 +2,7 @@ import SectionHeader from "./SectionHeader.jsx";
 
 const contacts = [
   ['fa-brands fa-telegram', 'Telegram', '@tentava', 'https://t.me/tentava'],
-  ['fa-brands fa-discord', 'Discord', '@Impopite', 'https://discord.com/users/Impopite'],
+  ['fa-brands fa-discord', 'Discord', '@Impopite', 'https://discord.gg/Impopite'],
   ['fa-brands fa-github', 'GitHub', 'Impopite', 'https://github.com/Impopite'],
 ];
 
