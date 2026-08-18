@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import useTyping from "../hooks/useTyping.js";
 
 function Hero() {
-  const phrases = useMemo(() => ['Computer Engineering Student', 'Java Developer', 'Jr. Web Developer'], []);
+  const phrases = useMemo(() => ['Computer Science Student', 'Java Developer', 'Jr. Web Developer'], []);
   const typing = useTyping(phrases);
 
   return (
