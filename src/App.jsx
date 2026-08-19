@@ -32,10 +32,15 @@ function App() {
       <ErrorBoundary>
       <main id="main-content">
         <Hero />
+        <div className="section-divider" aria-hidden="true">---</div>
         <About />
+        <div className="section-divider" aria-hidden="true">---</div>
         <Technologies />
+        <div className="section-divider" aria-hidden="true">---</div>
         <Projects />
+        <div className="section-divider" aria-hidden="true">---</div>
         <Experience />
+        <div className="section-divider" aria-hidden="true">---</div>
         <Contact />
       </main>
       </ErrorBoundary>

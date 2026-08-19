@@ -46,22 +46,27 @@ function Hero() {
           </div>
           <div className="terminal-body">
             <p className="terminal-line">
+              <span className="line-num" aria-hidden="true">1</span>
               <span className="prompt" aria-hidden="true">❯</span>
               <span><span className="key">role:</span> <span className="value">Java Developer</span></span>
             </p>
             <p className="terminal-line">
+              <span className="line-num" aria-hidden="true">2</span>
               <span className="prompt" aria-hidden="true">❯</span>
               <span><span className="key">focus:</span> <span className="value">plugins, backend, web</span></span>
             </p>
             <p className="terminal-line">
+              <span className="line-num" aria-hidden="true">3</span>
               <span className="prompt" aria-hidden="true">❯</span>
               <span><span className="key">status:</span> <span className="value">open to work</span></span>
             </p>
             <p className="terminal-line">
+              <span className="line-num" aria-hidden="true">4</span>
               <span className="prompt" aria-hidden="true">❯</span>
               <span><span className="key">stack:</span> <span className="value">Java, React, MySQL</span></span>
             </p>
             <p className="terminal-line">
+              <span className="line-num" aria-hidden="true">5</span>
               <span className="prompt" aria-hidden="true">❯</span>
               <span className="comment"># let's build something</span>
             </p>
